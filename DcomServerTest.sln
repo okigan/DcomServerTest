@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DcomServer", "DcomServer\DcomServer.vcxproj", "{57EDEA03-E696-44F5-926F-D2FBD0AF863C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DcomServerPS", "DcomServer\DcomServerPS.vcxproj", "{CD78BB5E-A8D3-4004-B60F-8A00F0E180F0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{57EDEA03-E696-44F5-926F-D2FBD0AF863C} = {57EDEA03-E696-44F5-926F-D2FBD0AF863C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DcomServerTester", "DcomServerTester\DcomServerTester.vcxproj", "{C8F58BA7-FC50-4497-AE62-887AF7D8D216}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57EDEA03-E696-44F5-926F-D2FBD0AF863C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{57EDEA03-E696-44F5-926F-D2FBD0AF863C}.Debug|Win32.Build.0 = Debug|Win32
+		{57EDEA03-E696-44F5-926F-D2FBD0AF863C}.Release|Win32.ActiveCfg = Release|Win32
+		{57EDEA03-E696-44F5-926F-D2FBD0AF863C}.Release|Win32.Build.0 = Release|Win32
+		{CD78BB5E-A8D3-4004-B60F-8A00F0E180F0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CD78BB5E-A8D3-4004-B60F-8A00F0E180F0}.Release|Win32.ActiveCfg = Release|Win32
+		{C8F58BA7-FC50-4497-AE62-887AF7D8D216}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C8F58BA7-FC50-4497-AE62-887AF7D8D216}.Debug|Win32.Build.0 = Debug|Win32
+		{C8F58BA7-FC50-4497-AE62-887AF7D8D216}.Release|Win32.ActiveCfg = Release|Win32
+		{C8F58BA7-FC50-4497-AE62-887AF7D8D216}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

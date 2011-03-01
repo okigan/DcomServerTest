@@ -1,0 +1,45 @@
+// DcomServer.idl : IDL source for DcomServer
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (DcomServer.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(7EA63417-2FAF-4193-82DA-DBF806866272),
+    dual,
+    nonextensible,
+    pointer_default(unique)
+]
+interface IDcomServerComp1 : IDispatch{
+    [] HRESULT Func1(void);
+};
+//[
+//	object,
+//	uuid(A18C96EB-6596-4C3D-8FDB-AD26D3D90311),
+//	dual,
+//	nonextensible,
+//	pointer_default(unique)
+//]
+//interface IDcomServerComp2 : IDispatch{
+//};
+[
+	uuid(399FEEE9-6DD0-4B0B-9734-63751C8228F9),
+	version(1.0),
+]
+library DcomServerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(4BB55D7E-B362-41F8-9555-6328B6D4B703)		
+	]
+	coclass DcomServerComp1
+	{
+		[default] interface IDcomServerComp1;
+	};
+};
+
+import "shobjidl.idl";

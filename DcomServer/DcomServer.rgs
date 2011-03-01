@@ -1,0 +1,17 @@
+HKCU
+{
+	NoRemove Software
+	{
+		NoRemove Classes
+		{
+			NoRemove AppID
+			{
+				ForceRemove {E086C742-608F-4CEE-B96F-99657DAD565F} = s 'DcomServerComp1 Class AppID'
+				{
+					val AppId = s '{E086C742-608F-4CEE-B96F-99657DAD565F}'
+					val DllSurrogate = s ''
+				}
+			}
+		}
+	}
+}

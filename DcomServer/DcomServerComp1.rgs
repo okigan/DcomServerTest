@@ -1,0 +1,22 @@
+HKCU
+{
+	NoRemove Software
+	{
+		NoRemove Classes
+		{
+			NoRemove CLSID
+			{
+				ForceRemove {4BB55D7E-B362-41F8-9555-6328B6D4B703} = s 'DcomServerComp1 Class'
+				{
+					InprocServer32 = s '%MODULE%'
+					{
+						val ThreadingModel = s 'Apartment'
+					}
+					TypeLib = s '{399FEEE9-6DD0-4B0B-9734-63751C8228F9}'
+					Version = s '1.0'
+					val AppId = s '{E086C742-608F-4CEE-B96F-99657DAD565F}'
+				}
+			}
+		}
+	}
+}
